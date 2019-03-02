@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet"  href="./index.css">
+    <title>phone directory</title>
+</head>
+
+<body>
+
+  <!-- heading "phone directory" -->
+    <div id="navbar">
+        <h1>PHONE DIRECTORY</h1>
+    </div>
+
+    <!-- form for name and phone number -->
+
+    <form>
+      <button type="button" id="backbtn" class="btn btn-light">Back</button>
+            <div class="form-group" id="form">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name"  placeholder="Enter name" onkeyup="add()">
+              <label for="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter phone number" onkeyup="addd()">
+  
+            <button type="reset" id="addbtn2"  onclick="Reset()"class="btn btn-success">Add</button>
+            </div>
+          </form>
+      
+      <!-- add button  -->
+
+     <button type="button" id="addbtn"  class="btn btn-success">Add</button>
+      
+
+     <!-- div for Subscriber to be added -->
+
+     <div id="p2">
+     <h4>Subscriber to be added:</h4>
+     <h5 id="h51">Name: </h5> <p id="namepara"></p>
+     <div>
+     <h5 id="h52">Phone: </h5><p id="phonepara"></p>
+     </div>
+     </div>
+
+    <!--  the directory -->
+
+    <div class="container" id="grids">
+            <div class="row">
+              <div id="col1">
+                <h4>NAME</h4>
+
+              </div>
+              <div  id="col2">
+                <h4>PHONE</h4>
+              </div>
+              <div id="col3">
+                <h4></h4>
+              </div>
+            </div>
+    </div> 
+
+<!-- linking javascript -->
+<script  src="./index.js"> </script>
+
+</body>
+</html>
